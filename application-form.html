@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>Skills-HTML-CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<!-- ############################# Body Content ########################### -->
+<body>
+  <h1>Come Work With Us!</h1>
+
+  <!-- ############################ Description ########################### -->
+  <fieldset>
+    <legend>Our application process:</legend>
+    <p>Nam fringilla felis sit amet tempor tincidunt. In hac habitasse platea dictumst. Aliquam a ligula rutrum, lacinia tellus vel, pharetra libero. Quisque cursus pulvinar justo non pulvinar. Maecenas sollicitudin nisi leo, sit amet ultrices quam egestas non. Curabitur accumsan efficitur ante vel volutpat. Fusce eget dapibus eros. Aliquam quis euismod nunc. Mauris eu augue non ligula placerat lobortis.</p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Apply: </legend>
+
+    <!-- ######################## Application Form ######################## -->
+    <form action="/application" method='POST'>
+      <label for="first_name">First name: </label><input type="text" name="first_name" id="first_name"><br>
+      <label for="last_name">Last name: </label><input type="text" name="last_name" id="last_name"><br>
+      <label for="salary">Salary Requirement:* </label><input type="number" name="salary" id="salary"><br>
+      <label for="position">Position of Interest: </label>
+      <select name="position" id="position">
+        <option value="software_engineer">Software Engineer</option>
+        <option value="qa_engineer">QA Engineer</option>
+        <option value="product_manager">Product Manager</option>
+      </select><br>
+      <input id="submit" type="submit" value="Submit">
+      <p id="footnote">* Please enter in numeric format (i.e. 80000, not 80K)</p>
+    </form>
+  </fieldset>
+
+</body>
+</html>
